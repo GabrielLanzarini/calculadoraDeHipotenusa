@@ -9,7 +9,13 @@ function calcular() {
 
     var result = document.getElementById("resultado");
 
-    if (A == "") {
+    if (A, B == "" || B, C == "" || C, A == "") {
+        alert("Preencha pelo menos dois campos")
+
+    } else if (A, B, C != "") {
+        alert("Preencha apenas dois campos")
+
+    } else if (A == "") {
         A2.classList.add("result")
         A2.textContent = "A = " +
             parseFloat((Math.sqrt((B * B) + (C * C)).toFixed(2)));
@@ -32,28 +38,4 @@ function calcular() {
         A2.textContent = "A = " +
             A;
     }
-}
-
-window.onmousemove = function() {
-    liberar()
-}
-
-function liberar() {
-    var A = document.getElementById('A').value;
-    var B = document.getElementById('B').value;
-    var C = document.getElementById('C').value;
-
-    var CStyle = document.getElementById("C__style").style
-
-    var botao = document.getElementById("button");
-
-
-
-    // if (A, B != "") {
-    //     botao.classList = ("button__calc animated__buton--aparecer")
-    //     CStyle.display = "none";
-    // } else if (A == "" || B == "") {
-    //     botao.classList = ("button__calc animated__buton--aparecer")
-    //     CStyle.display = "flex";
-    // }
 }

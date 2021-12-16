@@ -178,6 +178,7 @@
     
     .button__calc:hover {
         background-color: #035397;
+        cursor: pointer;
     }
     
     .incal {
@@ -225,6 +226,7 @@
     
     .result {
         color: #FFAA4C;
+        font-size: 30px;
     }
     
     input[type=number]::-webkit-inner-spin-button {
@@ -234,4 +236,36 @@
     input[type=number] {
         -moz-appearance: textfield;
         appearance: textfield;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 175px solid #FFAA4C;
+            grid-area: triangulo;
+        }
+        .container__resultado {
+            height: 45%;
+        }
+        .container__valores--ext {
+            height: 55%;
+            ;
+        }
+        .container__valores--int {
+            height: 75%;
+            width: 90%;
+        }
+        .triangulo__resultado {
+            color: white;
+            font-family: sans-serif;
+            display: grid;
+            grid-template-columns: 50px 1fr 1fr;
+            grid-template-rows: 90px 45px 180px;
+            grid-template-areas: "A A A" "B triangulo triangulo" "C C C";
+            align-items: center;
+            justify-items: center;
+        }
     }
