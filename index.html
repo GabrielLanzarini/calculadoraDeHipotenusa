@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="index.js"></script>
+
+    <title>Hipotenusa Calculator</title>
+</head>
+
+<body>
+    <main>
+        <section class="container__all">
+            <div class="container__valores--ext">
+
+                <div class="container__valores--int">
+                    <div class="box__labelInput">
+                        <label class="label__valores">a²</label>
+                        <input class="input__valores" type="number" name="" id="A">
+                    </div>
+
+                    <div class="box__labelInput">
+                        <label class="label__valores">b²</label>
+                        <input class="input__valores" type="number" name="" id="B">
+                    </div>
+
+                    <div id="C__style" class="box__labelInput">
+                        <label class="label__valores">c²</label>
+                        <input class="input__valores" type="number" name="" id="C">
+                    </div>
+
+
+                    <button id="button" onclick=calcular() class="button__calc">Calcular</button>
+                </div>
+
+            </div>
+
+            <div class="container__resultado">
+
+                <div class="triangulo__resultado">
+                    <h1 id="A=" class="resultado A">A = </h1>
+                    <h1 id="B=" class="resultado B">B = </h1>
+                    <div class="triangulo"></div>
+                    <h1 id="C=" class="resultado C">C = </h1>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
